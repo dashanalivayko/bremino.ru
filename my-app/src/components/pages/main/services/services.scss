@@ -1,0 +1,21 @@
+.services {
+    background: #FAFAFA;
+    padding: 80px 0;
+    &-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2D313A;
+        margin: 76px 0;
+    }
+}
