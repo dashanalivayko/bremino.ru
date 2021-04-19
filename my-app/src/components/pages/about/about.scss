@@ -1,0 +1,84 @@
+.about {
+    &__cntainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 130px 0 200px 0;
+    }
+    
+    &__items {
+        width: 50%;
+        padding: 0 100px 0 0;
+    }
+    &__items-title {
+        font-weight: 800;
+        color: black;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    &__items-subtitle {
+        font-size: 14px;
+        color: black;
+        font-weight: 300;
+        padding: 30px 0 0 0;
+    }
+    &__items-iconplay {
+        margin-right: 10px;
+    }
+    &__items-link--video {
+        font-size: 14px;
+        color: black;
+        font-weight: 300;
+        cursor: pointer;
+        padding-bottom: 1px;
+    }
+    &__items-link--video:hover {
+        border-bottom: 1px dotted gainsboro;
+    }
+    &__items-link {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+    }
+    &__behold {
+        width: 50%;
+    }
+    &__behold-box {
+        display: flex;
+        margin: 20px;
+    }
+    &__behold-item {
+        margin: 20px;
+    }
+    &__behold-icon {
+        margin-bottom: 25px;
+        width: 55px;
+        height: 55px;
+    }
+    &__behols-title {
+        font-size: 14px;
+        color: black;
+        font-weight: 300;
+    }
+    &__complex-title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+    }
+    &__complex-subtitle {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__complex-desc {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+    }
+    &__complex-text {
+        padding: 100px;
+    }
+}

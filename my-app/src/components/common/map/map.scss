@@ -1,0 +1,14 @@
+.map {
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        text-transform: uppercase;
+        padding: 150px 0 85px 0;
+    }
+    &__item {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+    
+}
