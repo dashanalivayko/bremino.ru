@@ -76,3 +76,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 2. Блок описание "О нас" 
 3. Блоки с описанием центров
 4. Карта
+
+
+21.04.2021
+1. Создан файл с картинками
+2. Начата верстка галереи

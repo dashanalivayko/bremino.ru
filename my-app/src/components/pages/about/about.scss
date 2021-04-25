@@ -1,84 +1,70 @@
 .about {
-    &__cntainer {
+    &__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 130px 0 200px 0;
-    }
-    
+        padding: 130px 0 200px 0;}
     &__items {
         width: 50%;
         padding: 0 100px 0 0;
-    }
-    &__items-title {
-        font-weight: 800;
-        color: black;
-        text-transform: uppercase;
-        font-size: 40px;
-    }
-    &__items-subtitle {
-        font-size: 14px;
-        color: black;
-        font-weight: 300;
-        padding: 30px 0 0 0;
-    }
-    &__items-iconplay {
-        margin-right: 10px;
-    }
-    &__items-link--video {
-        font-size: 14px;
-        color: black;
-        font-weight: 300;
-        cursor: pointer;
-        padding-bottom: 1px;
-    }
-    &__items-link--video:hover {
-        border-bottom: 1px dotted gainsboro;
-    }
-    &__items-link {
-        display: flex;
-        align-items: center;
-        padding-top: 30px;
-    }
+        &-title {
+            font-weight: 800;
+            color: black;
+            text-transform: uppercase;
+            font-size: 40px;}
+        &-subtitle {
+            font-size: 14px;
+            color: black;
+            font-weight: 300;
+            padding: 30px 0 0 0;}
+        &-iconplay {
+            margin-right: 10px;}
+        &-link--video {
+            font-size: 14px;
+            color: black;
+            font-weight: 300;
+            cursor: pointer;
+            padding-bottom: 1px;}
+        &-link--video:hover {
+            border-bottom: 1px dotted gainsboro;}
+        &-link {
+            display: flex;
+            align-items: center;
+            padding-top: 30px;}
+        }
     &__behold {
-        width: 50%;
+       width: 50%;
+        &-box {
+            display: flex;
+            margin: 20px;}
+        &-item {
+            margin: 20px;}
+        &-icon {
+            margin-bottom: 25px;
+            width: 55px;
+            height: 55px;}
+        &-title {
+            font-size: 14px;
+            color: black;
+            font-weight: 300;}}
+    &__complex {
+
+        &-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;}
+        &-subtitle {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;}
+        &-desc {
+            display: flex;
+            align-items: center;
+            padding: 100px 0;}
+        &-text {
+            padding: 100px;}
+        }
     }
-    &__behold-box {
-        display: flex;
-        margin: 20px;
-    }
-    &__behold-item {
-        margin: 20px;
-    }
-    &__behold-icon {
-        margin-bottom: 25px;
-        width: 55px;
-        height: 55px;
-    }
-    &__behols-title {
-        font-size: 14px;
-        color: black;
-        font-weight: 300;
-    }
-    &__complex-title {
-        text-align: center;
-        font-size: 40px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: black;
-    }
-    &__complex-subtitle {
-        text-align: center;
-        font-size: 14px;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-    &__complex-desc {
-        display: flex;
-        align-items: center;
-        padding: 100px 0;
-    }
-    &__complex-text {
-        padding: 100px;
-    }
-}
