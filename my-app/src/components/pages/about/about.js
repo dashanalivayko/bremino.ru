@@ -9,6 +9,8 @@ import {img} from '../../../assets/img';
 
 
 import './about.scss';
+import Advantages from '../../common/advantages/advantages';
+import Partners from '../../common/partners/partners';
 
 
 
@@ -118,6 +120,8 @@ function About() {
             </div>
             <Map/>
             <Gallery/>
+            <Partners />
+            <Advantages />
         </div>
 
 

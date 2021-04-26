@@ -1,3 +1,4 @@
+@import './src/colorPallette.scss';
 .gallery {
     position: relative;
     &__slides {
@@ -10,7 +11,7 @@
         width: auto;
         padding: 16px;
         margin-top: -50px;
-        color: white;
+        color: $white;
         font-weight: bold;
         font-size: 20px;
         border-radius: 0 3px 3px 0;
@@ -38,7 +39,7 @@
         text-align: center;
         background: #222;
         padding: 2px 16px;
-        color: white;
+        color: $white;
     }
     &__row::after {
         content: "";

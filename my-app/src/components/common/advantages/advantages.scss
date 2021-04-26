@@ -1,11 +1,16 @@
 @import './src/colorPallette.scss';
-.reviews {
-    padding: 50px 0 120px 0;
+.advantages {
+    padding: 102px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $background;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     &__title {
         font-style: normal;
         font-weight: bold;
@@ -16,18 +21,21 @@
         color: $activegray;
         margin-top: 23px;
     }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $activegray;
+        margin-top: 36px;
+    }
     &__cards {
         display: flex;
         width: 100%;
         justify-content: space-between;
         margin-top: 100px;
-        overflow-x: scroll;
-        &-item:not(:last-child) {
-            margin-right: 30px;
-        }
+        flex-wrap: wrap;
     }
-}
-
-.blue {
-    margin-top: 170px;
 }

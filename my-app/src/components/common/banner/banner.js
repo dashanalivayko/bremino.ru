@@ -18,7 +18,7 @@ function Banner(props) {
                         <Text contentName={'О компании'}
                               contentTitle={'Ведущий логистический оператор'}>                      
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </Text>
-                            <TransparentButton className="transparent"/>
+                            <TransparentButton className="transparent-banner">заказать звонок</TransparentButton>
                         </div>
                         
                             

@@ -1,6 +1,7 @@
+@import './src/colorPallette.scss';
 .banner-main {
     background-image: url('../../../../assets/banner.png');
-    background-color: lightgray;
+    background-color: $lightgray;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,11 +15,11 @@
     line-height: 61px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    width: 700px;
+    color: $white;
+    max-width: 700px;
 }
 
 .transparent {
-    margin-top: 120px;
+    margin-top: 70px;
 }
 

@@ -8,7 +8,7 @@ function Banner() {
         <section className="banner-main">
             <div className="wrapper">
                 <h1 className="title">Складские услуги премиум-класса</h1>
-                <TransparentButton className="transparent"/>
+                <TransparentButton className="transparent">заказать звонок</TransparentButton>
             </div>
         </section>
     );
