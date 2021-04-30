@@ -19,6 +19,13 @@ import importer from '../assets/import.svg';
 import exporter from '../assets/export.svg';
 import review from '../assets/review.png';
 import news from '../assets/news.png';
+import bannerair from '../assets/bannerair.png';
+import banneralco from '../assets/banneralco.png';
+import bannerwarehouses from '../assets/bannerwarehouses.png';
+import labelone from '../assets/labelone.jpg';
+import labeldm from '../assets/labeldm.jpg';
+import left from '../assets/left.svg'
+import right from '../assets/right.svg'
 
 export const img = {
     play,
@@ -42,4 +49,11 @@ export const img = {
     exporter,
     review,
     news,
+    bannerair,
+    banneralco,
+    bannerwarehouses,
+    labelone,
+    labeldm,
+    left,
+    right,
 }

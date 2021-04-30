@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../common/header/header';
-import Banner from './banner/banner';
+import Banner from './banner-slider/banner-slider';
 import Services from './services/services';
 import './main.scss';
 import Advantages from '../../common/advantages/advantages';

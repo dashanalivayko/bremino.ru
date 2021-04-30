@@ -1,0 +1,121 @@
+@import './src/colorPallette.scss';
+/* .banner-main {
+    background-image: url('../../../../assets/banner.png');
+    background-color: $lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 85px 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    max-width: 700px;
+}
+
+.transparent {
+    margin-top: 70px;
+} */
+
+
+
+.banner {
+    &__container {
+        width: 100%;
+    }
+    &__slider {
+        position: relative;
+        overflow: hidden;
+        
+        &-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        &-wrapper {
+            display: flex;
+            transition: transform 0.6s ease;
+        }
+        &-img {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+        }
+        &-background {
+            width: 100%;
+            height: auto;
+        }
+        &-box {
+            position: absolute;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        &-title {
+            font-size: 50px;
+            color: white;
+            text-transform: uppercase;
+        }
+        &-subtitle {
+            color: white;
+            font-size: 20px;
+            font-weight: 100;
+            padding: 30px 0;
+        }
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            
+            
+            width: 100%;
+        }
+        &-control {
+            position: absolute;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            
+            
+            opacity: 0.5;
+            height: 50px;
+            transform: translateY(-50%);
+            
+            &--left {
+                left: 15%;
+            }
+
+            &--right {
+                right: 15%;
+            }
+
+        }
+        &-control:hover, &-control:focus {
+            
+            outline: 0;
+            opacity: .9;
+        
+            
+
+            
+        }
+        
+        &-item>div {
+            
+            text-align: center;
+        }
+    }
+}
