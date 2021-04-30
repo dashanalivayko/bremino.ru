@@ -66,9 +66,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: auto;
+    flex-shrink: 0;
     &-icon {
         width: 100%;
         height: 250px;
+        flex-shrink: 0;
     }
     &-title {
         font-style: normal;
@@ -78,7 +81,7 @@
         text-transform: uppercase;
         color: $gray;
         margin-top: 30px;
-        overflow-x: hidden;
+        overflow: hidden;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         display: -webkit-box;
@@ -91,7 +94,7 @@
         text-transform: uppercase;
         color: $gray;
         margin-top: 25px;
-        overflow-x: hidden;
+        overflow: hidden;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         display: -webkit-box;

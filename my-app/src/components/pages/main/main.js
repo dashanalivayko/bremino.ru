@@ -9,6 +9,7 @@ import Reviews from '../../pages/main/reviews/reviews';
 import Partners from '../../common/partners/partners';
 import Map from '../../common/map/map';
 import LastNews from '../../pages/main/lastNews/lastNews';
+import Footer from '../../common/footer/footer';
 
 function Main() {
     return (
@@ -22,6 +23,7 @@ function Main() {
             <Partners />
             <Map />
             <LastNews />
+            <Footer />
         </div>
     );
   }

@@ -16,6 +16,9 @@ function App() {
             <Route path="/news" component={Main} />
             <Route path="/faq" component={Main} />
             <Route path="/contacts" component={Main} />
+            <Route path="/alcohol-labling" component={About} />
+            <Route path="/datamatrix-labling" component={About} />
+            <NavLink className="nav-item" to="/sticker-labling" exact>маркировка стикерами</NavLink>
         </Switch>
      </BrowserRouter>
   );
