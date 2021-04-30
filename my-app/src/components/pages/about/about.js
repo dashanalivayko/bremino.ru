@@ -46,13 +46,13 @@ function About() {
                             <div className="about__behold-box">
                                 <div className="about__behold-item">
                                     <img src={img.label} className="about__behold-icon" alt="logo" />
-                                    <p className="about__behols-title">
+                                    <p className="about__behold-title">
                                         Более 135 млн. промаркированных eдиниц товаров
                                 </p>
                                 </div>
                                 <div className="about__behold-item">
                                     <img src={img.warehouse} className="about__behold-icon" alt="logo" />
-                                    <p className="about__behols-title">
+                                    <p className="about__behold-title">
                                         Более 135 млн. промаркированных eдиниц товаров
                                 </p>
                                 </div>
@@ -60,13 +60,13 @@ function About() {
                             <div className="about__behold-box">
                                 <div className="about__behold-item">
                                     <img src={img.truck} className="about__behold-icon" alt="logo" />
-                                    <p className="about__behols-title">
+                                    <p className="about__behold-title">
                                         Более 135 млн. промаркированных eдиниц товаров
                                 </p>
                                 </div>
                                 <div className="about__behold-item">
                                     <img src={img.shelf} className="about__behold-icon" alt="logo" />
-                                    <p className="about__behols-title">
+                                    <p className="about__behold-title">
                                         Более 135 млн. промаркированных eдиниц товаров
                                 </p>
                                 </div>

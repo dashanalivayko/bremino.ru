@@ -1,7 +1,8 @@
 @import './src/colorPallette.scss';
 .banner {
-    background: linear-gradient(to top, $blue 80%, #eee 20%);
+    background: linear-gradient(to top, $blue 80%, white 20%);
     width: 100%;
+    margin-top: 50px;
     &__content {
         width: 100%;
         display: flex;
@@ -20,13 +21,15 @@
             color: $white;
             font-weight: 800;
             font-size: 40px;
-            padding: 20px 0 0 0;}
+            padding: 20px 0 0 0;
+            color: white;}
         &-subtitle {
             font-size: 14px;
             color: $white;
             font-weight: 300;
             text-transform: uppercase;
-            padding: 50px 0 0 0;}
+            padding: 50px 0;
+            color: white;}
     }   
 }
 

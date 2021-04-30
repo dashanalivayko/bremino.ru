@@ -24,8 +24,14 @@ import banneralco from '../assets/banneralco.png';
 import bannerwarehouses from '../assets/bannerwarehouses.png';
 import labelone from '../assets/labelone.jpg';
 import labeldm from '../assets/labeldm.jpg';
-import left from '../assets/left.svg'
-import right from '../assets/right.svg'
+import left from '../assets/left.svg';
+import right from '../assets/right.svg';
+import berestovitcatlc from '../assets/berestovitcatlc.jpg';
+import breminoorsha from '../assets/breminoorsha.png';
+import bruzgione from '../assets/bruzgione.jpg';
+import bruzgitruck from '../assets/bruzgitruck.jpg';
+import bruzgitwo from '../assets/bruzgitwo.jpg';
+
 
 export const img = {
     play,
@@ -56,4 +62,9 @@ export const img = {
     labeldm,
     left,
     right,
+    berestovitcatlc,
+    breminoorsha,
+    bruzgione,
+    bruzgitruck,
+    bruzgitwo,
 }
