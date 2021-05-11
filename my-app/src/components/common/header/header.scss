@@ -1,5 +1,6 @@
+@import './src/colorPallette.scss';
 .header {
-    background-color: white;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
@@ -24,10 +25,10 @@
         line-height: 17px;
         text-transform: uppercase;
         text-decoration: none;
-        color: rgba(45, 49, 58, 0.25);
+        color: $lightgray;
     }
 }
 
 .active {
-    color: rgba(45, 49, 58, 1);
+    color: $activegray;
 }

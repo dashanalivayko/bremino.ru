@@ -1,12 +1,20 @@
 import React from 'react';
 import './buttons.scss';
 
-function TransparentButton() {
+function TransparentButton(props) {
     return (
        <button className="transparent">
-           <p className="transparent-text">заказать звонок</p>
+           <p className="transparent-text">{props.children}</p>
        </button>
     );
   }
 
-  export {TransparentButton}
+  function BlueButton(props) {
+    return (
+       <button className="blue">
+           <p className="blue-text">{props.children}</p>
+       </button>
+    );
+  }
+
+  export {TransparentButton, BlueButton}

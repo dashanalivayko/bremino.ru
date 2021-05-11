@@ -1,38 +1,31 @@
 import React from 'react';
 import './services.scss';
 import { ServicesCard } from '../../../common/cards/cards';
-import warehouse from '../../../../assets/warehouse.svg';
-import labling from '../../../../assets/labling.svg';
-import crossDocking from '../../../../assets/cross-docking.svg';
-import transport from '../../../../assets/transport.svg';
-import avia from '../../../../assets/avia.svg';
-import others from '../../../../assets/others.svg';
-import ekspeditor from '../../../../assets/ekspeditor.svg';
-import importer from '../../../../assets/import.svg';
-import exporter from '../../../../assets/export.svg';
+import {img} from '../../../../assets/img';
+
 
 function Services(props) {
     return (
         <div className="services">
             <div className="wrapper">
                 <div className="services-cards">
-                    <ServicesCard src = {warehouse} title={'Складское хранение'}>
+                    <ServicesCard src = {img.warehouse} title={'Складское хранение'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {labling} title={'Маркировка товаров'}>
+                    <ServicesCard src = {img.labling} title={'Маркировка товаров'}>
                     Алкогольные напитки, одежда, обувь, парфюм и духи, мороженное и сыры, 
                     продукты питания и напитки
                     </ServicesCard>
-                    <ServicesCard src = {crossDocking} title={'Услуги кросс-докинга'}>
+                    <ServicesCard src = {img.crossDocking} title={'Услуги кросс-докинга'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {transport} title={'Транспортные услуги'}>
+                    <ServicesCard src = {img.transport} title={'Транспортные услуги'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {avia} title={'Обслуживание авиа-грузов и транспорта'}>
+                    <ServicesCard src = {img.avia} title={'Обслуживание авиа-грузов и транспорта'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {others} title={'Дополнительные услуги'}>
+                    <ServicesCard src = {img.others} title={'Дополнительные услуги'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
                 </div>
@@ -47,13 +40,13 @@ function Services(props) {
             <div >
                 <h3 className="services-title">Отраслевые решения</h3>
                 <div className="services-cards">
-                    <ServicesCard src = {ekspeditor} title={'Экспедиторам'}>
+                    <ServicesCard src = {img.ekspeditor} title={'Экспедиторам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {importer} title={'Импортерам'}>
+                    <ServicesCard src = {img.importer} title={'Импортерам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {exporter} title={'Экспортерам'}>
+                    <ServicesCard src = {img.exporter} title={'Экспортерам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
                 </div>

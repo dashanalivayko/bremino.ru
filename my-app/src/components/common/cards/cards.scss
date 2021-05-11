@@ -1,7 +1,9 @@
+@import './src/colorPallette.scss';
+
 .service {
     max-width: 380px;
     height: 250px;
-    background-color: white;
+    background-color: $white;
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -15,13 +17,86 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
-        color: #2D313A;
+        color: $gray;
     }
     &-subtitle {
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #2D313A;
+        color: $gray;
+    }
+}
+
+.advantage {
+    max-width: 275px;
+    height: 200px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    &-icon {
+        width: 55px;
+        height: 55px;
+    }
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $gray;
+    }
+    &-subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $gray;
+        width: 150px;
+    }
+}
+
+.news {
+    max-width: 32%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    flex-shrink: 0;
+    &-icon {
+        width: 100%;
+        height: 250px;
+        flex-shrink: 0;
+    }
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $gray;
+        margin-top: 30px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    &-subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $gray;
+        margin-top: 25px;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
     }
 }

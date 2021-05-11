@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+19.04.2021 
+1. Баннер
+2. Блок описание "О нас" 
+3. Блоки с описанием центров
+4. Карта
+
+
+21.04.2021
+1. Создан файл с картинками
+2. Начата верстка галереи
+
+30.04.2021
+1. Создан слайдер на главной
+2. Подключен JS слайдера
+3. добавлена галерея с фотками
+4. убран скрол карты
