@@ -8,12 +8,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 2px solid $background;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
     &-icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     &-title {
         font-style: normal;
@@ -45,13 +46,13 @@
     text-align: center;
     text-decoration: none;
     &-icon {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
     &-title {
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 17px;
         line-height: 24px;
         text-align: center;
         text-transform: uppercase;

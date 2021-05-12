@@ -31,6 +31,14 @@ import breminoorsha from '../assets/breminoorsha.png';
 import bruzgione from '../assets/bruzgione.jpg';
 import bruzgitruck from '../assets/bruzgitruck.jpg';
 import bruzgitwo from '../assets/bruzgitwo.jpg';
+import cargodc from '../assets/cargodc.png';
+import craftrans from '../assets/craftrans.png';
+import tels from '../assets/tels.png';
+import transitservice from '../assets/transitservice.png';
+import alesta from '../assets/alesta.png';
+import belviat from '../assets/belviat.png';
+import gec from '../assets/gec.png';
+import jenty from '../assets/jenty.png';
 import calc from '../assets/calc.svg';
 
 
@@ -68,5 +76,13 @@ export const img = {
     bruzgione,
     bruzgitruck,
     bruzgitwo,
+    cargodc,
+    craftrans,
+    tels,
+    transitservice,
+    gec,
+    jenty,
+    belviat,
+    alesta,
     calc,
 }
