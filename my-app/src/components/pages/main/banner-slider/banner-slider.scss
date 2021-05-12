@@ -52,8 +52,6 @@
         &-container {
             display: flex;
             justify-content: space-between;
-            
-            
             width: 100%;
         }
         &-control {
@@ -91,6 +89,29 @@
         &-item>div {
             
             text-align: center;
+        }
+    }
+    &__addinfo {
+        display: flex;
+        width: 100%;
+        background-color: $blue;
+        padding: 20px;
+        &-item {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: $white;
+            img {
+                margin-right: 16px;
+            }
+            a {
+                text-decoration: none;
+                margin-left: 10px;
+            }
         }
     }
 }

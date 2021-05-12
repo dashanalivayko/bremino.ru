@@ -8,6 +8,8 @@ import { img } from '../../../assets/img';
 import './about.scss';
 import Advantages from '../../common/advantages/advantages';
 import Partners from '../../common/partners/partners';
+import Footer from '../../common/footer/footer';
+import Block from '../../common/block/block';
 
 function About() {
     return (
@@ -71,58 +73,21 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="about__complex">
-                <div className="wrapper">
-                    <div className="about__complex">
-                        <h1 className="about__complex-title">
-                            Бремино-Орша
-                        </h1>
-                        <h2 className="about__complex-subtitle">
-                            Мультимодальный промышленно логиситический комплекс
-                        </h2>
-                        <div className="about__complex-desc">
-                            <p className="about__complex-text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                            <img src={img.orsha} className="about__items-img" alt="logo" />
-                        </div>
-                    </div>
-                    <div className="about__complex">
-                        <h1 className="about__complex-title">
-                            бремино-брузги
-                        </h1>
-                        <h2 className="about__complex-subtitle">
-                            транспортно-логистический центр
-                        </h2>
-                        <div className="about__complex-desc">
-                            <img src={img.orsha} className="about__items-img" alt="logo" />
-                            <p className="about__complex-text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="about__complex">
-                        <h1 className="about__complex-title">
-                            бремино-берестовица
-                        </h1>
-                        <h2 className="about__complex-subtitle">
-                            транспортно-логистический центр
-                        </h2>
-                        <div className="about__complex-desc">
-                            <p className="about__complex-text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                            <img src={img.orsha} className="about__items-img" alt="logo" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <Map/>          
-            <Partners/>
-            <Advantages/>
+                < Block title={'бремино-орша'} subtitle={'Мультимодальный промышленно логистический комплекс'} src={img.orsha}>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </ Block>
+                < Block title={'бремино-брузги'} subtitle={'транспортно-логистический центр'} src={img.orsha}  flex-direction = {'row-reverse'}>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </ Block>
+                < Block title={'бремино-берестовица'} subtitle={'транспортно-логистический центр'} src={img.orsha}>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </ Block>
+            </div>
+            <Map/>
             <Gallery/>
-            <Footer/>
+            <Partners />
+            <Advantages />
+            <Footer />
         </div>
 
 

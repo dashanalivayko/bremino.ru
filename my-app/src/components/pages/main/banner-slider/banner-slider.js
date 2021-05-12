@@ -18,9 +18,9 @@ function Banner() {
                                 </h1>
                                 
                                 <h2 className="banner__slider-subtitle">
-                                    Обработка груза осуществляется в круглосуточном режиме <br/> (без выходных и праздиков)
+                                    Обработка груза осуществляется в круглосуточном режиме <br/> (без выходных и праздников)
                                 </h2>
-                                <TransparentButton className="transparent">заказать звонок</TransparentButton>
+                                <TransparentButton>заказать звонок</TransparentButton>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ function Banner() {
                                 </h2>
                                 
                                 
-                                <TransparentButton className="transparent">заказать звонок</TransparentButton>
+                                <TransparentButton>заказать звонок</TransparentButton>
                             </div>
                         </div>
                     </div>
@@ -53,17 +53,25 @@ function Banner() {
                                 <h2 className="banner__slider-subtitle">
                                     Обработка груза осуществляется в круглосуточном режиме <br/> (без выходных и праздиков)
                                 </h2>
-                                <TransparentButton className="transparent">заказать звонок</TransparentButton>
+                                <TransparentButton>заказать звонок</TransparentButton>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                        <a className="banner__slider-control banner__slider-control--left" href="#" role="button">
-                           <img src={img.left} className=" banner__slider-control banner__slider-control--left" alt="left" /></a>
-                        <a className="banner__slider-control banner__slider-control--right" href="#" role="button">
-                           <img src={img.right} className=" banner__slider-control banner__slider-control--right" alt="right" /></a>
-
+                <a className="banner__slider-control banner__slider-control--left" href="#" role="button">
+                    <img src={img.left} className=" banner__slider-control banner__slider-control--left" alt="left" /></a>
+                <a className="banner__slider-control banner__slider-control--right" href="#" role="button">
+                    <img src={img.right} className=" banner__slider-control banner__slider-control--right" alt="right" /></a>
+            </div>
+            <div className="banner__addinfo">
+                <div className=" wrapper wrapper-row">
+                    <p className="banner__addinfo-item">по вопросам организации перевозки звоните <a className="banner__addinfo-item" href="tel:375 44 720 07 07">+375 44 720 07 07</a></p>
+                    <p className="banner__addinfo-item">
+                        <img src={img.calc}/>
+                        расcчитать стоимость услуг
+                    </p>
+                </div>
             </div>
         </section >
     );
