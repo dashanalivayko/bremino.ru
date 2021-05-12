@@ -1,12 +1,20 @@
 @import './src/colorPallette.scss';
+
+#about {
+    &__complex {
+        background: $background;
+        padding: 100px 0 0 0;
+    }
+}
+
 .about {
     &__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 100px 0;}
+        padding: 100px 0 50px 0;}
     &__items {
-        width: 50%;
+        
         padding: 0 100px 0 0;
         &-title {
             font-weight: 800;
@@ -30,7 +38,7 @@
             padding-bottom: 1px;
         }
         &-link--video:hover {
-            border-bottom: 1px dotted $lightgray;
+            border-bottom: 1px dotted $background;
         }
         &-link {
             display: flex;
@@ -42,10 +50,21 @@
        width: 50%;
         &-box {
             display: flex;
-            margin: 20px;
+            text-align: center;
         }
         &-item {
-            margin: 20px;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &--right{
+                border-right: 2px solid $background;
+            }
+            &--bottom {
+                border-bottom: 2px solid $background;
+            }
         }
         &-icon {
             margin-bottom: 25px;
@@ -56,6 +75,7 @@
             font-size: 14px;
             color: $gray;
             font-weight: 300;
+            padding: 0 50px 0 50px;
         }   
     }
     &__complex {
