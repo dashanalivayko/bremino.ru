@@ -46,22 +46,31 @@
         display: flex;
         padding: 30px 0;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
     &__lng {
         display: flex;
         justify-content: space-between;
-        width: 160px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 16px;
-        text-transform: uppercase;
-        color: $white;
+        align-items: center;           
+        &-transfer {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: $white;
+            font-style: normal;
+            font-family: 'Montserrat', 'Open Sans';
+            transition: 0.2s ease-out;
+            margin-left: 15px;
+        }
+        &-transfer:hover {
+            border-bottom: 1px dotted $background;
+        }
     }
     &__info {
         display: flex;
         margin-left: auto;
-        width: 245px;
         justify-content: space-between;
         align-items: center;
         &-item {
@@ -73,6 +82,7 @@
             text-transform: uppercase;
             color: #FFFFFF;
             text-decoration: none;
+            margin-left: 15px;
         }
         
     }
