@@ -32,3 +32,24 @@
         color: $white;
     }
 }
+
+.readMore {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: $gray;
+    }
+}
+
+.borded {
+    transition: 0.2s;
+    border-bottom: 2px solid $white;
+    &:hover {
+        border-bottom: 2px solid $blue;
+    }
+}

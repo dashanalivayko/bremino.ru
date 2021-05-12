@@ -16,7 +16,7 @@ function Reviews() {
                     <img className="reviews__cards-item" src={img.review}></img>
                     <img className="reviews__cards-item" src={img.review}></img>
                 </div>
-                <BlueButton className="blue">оставить отзыв</BlueButton>
+                <BlueButton className="marginTop100">оставить отзыв</BlueButton>
             </div>
         </section>
     );

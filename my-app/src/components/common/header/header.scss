@@ -2,7 +2,6 @@
 .header {
     background-color: $white;
     display: flex;
-    justify-content: space-between;
     padding: 20px 0;
     align-items: center;
     width: 100%;
@@ -11,6 +10,7 @@
 .logo {
     width: 75px;
     height: 40px;
+    margin-right: 40px;
 }
 
 .nav {
@@ -31,4 +31,34 @@
 
 .active {
     color: $activegray;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 15px;
+}
+
+.HeaderContacts {
+    display: flex;
+    padding: 20px 0;
+    align-content: center;
+    width: 100%;
+    background-color: $verylightgray;
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-left: 30px;
+        img {
+            margin-right: 7px;
+        }
+        a {
+            color: $activegray;
+            text-decoration: none;
+        }
+    }
+}
+
+.marginLeftAuto {
+    margin-left: auto;
 }

@@ -11,7 +11,7 @@ import point from '../assets/point.svg'
 import money from '../assets/money.svg'
 import labling from '../assets/labling.svg';
 import crossDocking from '../assets/cross-docking.svg';
-import transport from '../assets/transport.svg';
+import transport from '../assets/transportnik.svg';
 import avia from '../assets/avia.svg';
 import others from '../assets/others.svg';
 import ekspeditor from '../assets/ekspeditor.svg';
@@ -31,6 +31,7 @@ import breminoorsha from '../assets/breminoorsha.png';
 import bruzgione from '../assets/bruzgione.jpg';
 import bruzgitruck from '../assets/bruzgitruck.jpg';
 import bruzgitwo from '../assets/bruzgitwo.jpg';
+import calc from '../assets/calc.svg';
 
 
 export const img = {
@@ -67,4 +68,5 @@ export const img = {
     bruzgione,
     bruzgitruck,
     bruzgitwo,
+    calc,
 }
