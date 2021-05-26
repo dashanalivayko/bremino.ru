@@ -15,9 +15,9 @@ function Banner(props) {
                             {props.contentVideo}
                         </div>
                         <div className="banner__content-item">
-                        <Text contentName={props.contentName}
-                              contentTitle={props.contentTitle}>                      
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </Text>
+                            <Text contentName={props.contentName}
+                                contentTitle={props.contentTitle}>                      
+                                {props.children} </Text>
                             <TransparentButton className="transparent-banner">заказать звонок</TransparentButton>
                         </div>
                         

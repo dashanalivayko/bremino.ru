@@ -2,6 +2,7 @@ import React from 'react';
 import './gallery.scss';
 
 import { img } from '../../../assets/img';
+import { TransparentBlueButton } from '../buttons/buttons';
 
 
 function Gallery() {
@@ -47,7 +48,7 @@ function Gallery() {
                             </h2>
                         </div>
                     </div>
-                    <div className="gallery__item-btn">Показать еще</div>
+                    <TransparentBlueButton>Показать еще</TransparentBlueButton>
                 </div>
             </div>
         </section >

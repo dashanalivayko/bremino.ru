@@ -10,26 +10,26 @@ import Footer from '../../common/footer/footer';
 import { CallBanner } from '../../common/callBanner/callBanner';
 import { img } from '../../../assets/img';
 
-import './labeling.scss';
+import './warehouses.scss';
 import Block from '../../common/block/block';
 import { BlueButton, TransparentBlueButton, TransparentButton } from '../../common/buttons/buttons';
 import Additional from '../../common/additional/additional';
 import Gallery from '../../common/gallery/gallery';
 import Main from '../main/main';
 
-function Labeling() {
+function AdditionalPage() {
 
     // const onAlcoLabling = () => {return < Main />};
 
     return (
         <div>
             <Header />
-            <Banner
+            {/* <Banner
                 contentVideo={<iframe width="600" height="600" src="https://www.youtube.com/embed/2UXNdgC6O88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
                 contentName={'Маркировка товаров'}
                 contentTitle={'Акциз Этикетка Datamatrix'}>
                 ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику.
-            </Banner>
+            </Banner> */}
             <div className="container">
                 <div className="wrapper">
                     < Block title={'маркировка алкогольных напитков'} subtitle={'с помарочным учетом'} src={img.orsha}>
@@ -49,7 +49,7 @@ function Labeling() {
                         passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         <div className="buttons">
                             <BlueButton>Заказать расчет</BlueButton>
-                            <TransparentBlueButton to={'/data-matrix'}>Узнать больше</TransparentBlueButton>
+                            <TransparentBlueButton>Узнать больше</TransparentBlueButton>
                         </div>
                     </ Block>
                     < Block title={'маркировка этикетками'} subtitle={'алкогольных напитков с помарочным учетом'} src={img.orsha}>
@@ -59,7 +59,7 @@ function Labeling() {
                         passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         <div className="buttons">
                             <BlueButton>Заказать расчет</BlueButton>
-                            <TransparentBlueButton to={'/stickers'}>Узнать больше</TransparentBlueButton>
+                            <TransparentBlueButton>Узнать больше</TransparentBlueButton>
                         </div>
                     </ Block>
                 </div>
@@ -74,4 +74,4 @@ function Labeling() {
     );
   }
   
-  export default Labeling;
+  export default AdditionalPage;

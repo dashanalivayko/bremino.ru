@@ -11,9 +11,9 @@ function Advantages() {
                 <div className="advantages__header">
                     <img src={img.advantages} />
                     <h3 className="advantages__title">почему мы?</h3>
-                    <p className="advantages__subtitle">эффективно решим любоую задачу по хранению
+                    {/* <p className="advantages__subtitle">эффективно решим любоую задачу по хранению
                      и обработке товаров на наших складах. Предоставим качественный сервис по доступным 
-                     ценам с минимальными временными затратами для вас</p>
+                     ценам с минимальными временными затратами для вас</p> */}
                 </div>
                 <div className="advantages__cards">
                     <AdvantagesCard title="оперативность в исполнении"

@@ -10,7 +10,7 @@ import Partners from '../../common/partners/partners';
 import Map from '../../common/map/map';
 import LastNews from '../../pages/main/lastNews/lastNews';
 import Footer from '../../common/footer/footer';
-import CallBanner from '../../common/callBanner/callBanner';
+import { CallBannerBlue } from '../../common/callBanner/callBanner';
 
 function Main() {
     return (
@@ -20,7 +20,7 @@ function Main() {
             <Services />
             <Advantages />
             <Video />
-            <CallBanner />
+            <CallBannerBlue />
             <Reviews />
             <Partners />
             <Map />
