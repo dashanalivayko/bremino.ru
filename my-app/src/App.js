@@ -10,6 +10,7 @@ import CrossDocking from './components/pages/cross-docking/cross-docking';
 import Transport from './components/pages/transport/transport';
 import Avia from './components/pages/avia/avia';
 import Additional from './components/common/additional/additional';
+import Lablingdm from './components/pages/labeling/lablingdm/lablingdm';
 
 
 
@@ -20,18 +21,19 @@ function App() {
            <Switch>
                <Route path="/about" component={About} />
                <Route exact path="/" component={Main} />
-               <Route path="/news" component={About} />
+               <Route path="/expeditors" component={About} />
+               <Route path="/importers" component={About} />
+               <Route path="/exporters" component={About} />
                <Route path="/faq" component={Main} />
-               <Route path="/contacts" component={Main} />
+               {/* <Route path="/contacts" component={Main} /> */}
                <Route path="/labeling" component={Labeling} />
                <Route path="/warehouses" component={Warehouses} />
-               <Route path="/labling" component={Labeling} />
                <Route path="/alco-labling" component={About} />
                <Route path="/cross-docking" component={CrossDocking} />
                <Route path="/transportnie-uslugi" component={Transport} />
                <Route path="/avia" component={Avia} />
                <Route path="/additional" component={Additional} />
-
+               <Route path="/data-matrix" component={Lablingdm} />
 
                <Route path="/warehousing" component={Labeling} />
                <Route path="/labling" component={Labeling} />

@@ -19,8 +19,6 @@ import Main from '../main/main';
 
 function Labeling() {
 
-    // const onAlcoLabling = () => {return < Main />};
-
     return (
         <div>
             <Header />

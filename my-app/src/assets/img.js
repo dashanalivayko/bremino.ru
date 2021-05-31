@@ -41,8 +41,41 @@ import gec from '../assets/gec.png';
 import jenty from '../assets/jenty.png';
 import calc from '../assets/calc.svg';
 
+import boxes from '../assets/boxes.svg';
+import bruzgi_tlc from '../assets/bruzgi_tlc.png';
+import carPoint from '../assets/car-point.svg';
+import computer from '../assets/computer.svg';
+import crossDockingCar from '../assets/cross-dockingcar.svg';
+import documents from '../assets/documents.svg';
+import pointblue from '../assets/pointblue.svg';
+import weightcar from '../assets/weightcar.svg';
+import lablingpng from '../assets/labling.svg';
+
+import one from '../assets/one.svg';
+import two from '../assets/two.svg';
+import three from '../assets/three.svg';
+import four from '../assets/four.svg';
+import five from '../assets/five.svg';
+
+
 
 export const img = {
+    boxes,
+    carPoint,
+    computer,
+    crossDockingCar,
+    documents,
+    weightcar,
+    pointblue,
+    bruzgi_tlc, 
+    labling, 
+
+    one,
+    two,
+    three,
+    four,
+    five,
+
     play,
     label,
     warehouse,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReadMoreButton, TransparentBlueButton, ReadExactlyButton } from '../buttons/buttons';
+import { img } from '../../../assets/img';
 import './cards.scss';
 
   function ServicesCard(props) {
@@ -20,6 +21,15 @@ import './cards.scss';
             <h3 className="advantage-title">{props.title}</h3>
             <p className="advantage-subtitle">{props.children}</p>
         </Link>
+    );
+  }
+
+  function AboutCard(props) {
+    return (
+    <div className="aboutCard">
+      <img src={img.shelf} className="aboutCard-icon" alt="logo" />
+      <p className="aboutCard-title">Более 135 млн. промаркированных eдиниц товаров</p>
+    </div>
     );
   }
 
@@ -55,4 +65,4 @@ import './cards.scss';
     );
   }
 
-  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard };
+  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard, AboutCard };

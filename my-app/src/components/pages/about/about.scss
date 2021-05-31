@@ -1,84 +1,13 @@
 @import './src/colorPallette.scss';
 
-#about {
-    &__complex {
-        background: $background;
-        padding: 100px 0 0 0;
-    }
-}
+// #about {
+//     background: $background;
+// }
 
 .about {
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 100px 0 50px 0;}
-    &__items {
-        
-        padding: 0 100px 0 0;
-        &-title {
-            font-weight: 800;
-            color: $gray;
-            text-transform: uppercase;
-            font-size: 40px;}
-        &-subtitle {
-            font-size: 14px;
-            color: $gray;
-            font-weight: 300;
-            padding: 30px 0 0 0;
-        }
-        &-iconplay {
-            margin-right: 10px;
-        }
-        &-link--video {
-            font-size: 14px;
-            color: $gray;
-            font-weight: 300;
-            cursor: pointer;
-            padding-bottom: 1px;
-        }
-        &-link--video:hover {
-            border-bottom: 1px dotted $background;
-        }
-        &-link {
-            display: flex;
-            align-items: center;
-            padding-top: 30px;
-        }
-    }
-    &__behold {
-       width: 50%;
-        &-box {
-            display: flex;
-            text-align: center;
-        }
-        &-item {
-            width: 250px;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            &--right{
-                border-right: 2px solid $background;
-            }
-            &--bottom {
-                border-bottom: 2px solid $background;
-            }
-        }
-        &-icon {
-            margin-bottom: 25px;
-            width: 55px;
-            height: 55px;
-        }
-        &-title {
-            font-size: 14px;
-            color: $gray;
-            font-weight: 300;
-            padding: 0 50px 0 50px;
-        }   
-    }
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .row-reverse {

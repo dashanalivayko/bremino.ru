@@ -16,8 +16,8 @@ import { BlueButton } from '../buttons/buttons';
 function Header() {
 return (
     <section>
+        <HeaderContacts />
         <div className="wrapper">
-            <HeaderContacts />
             <header className="header">
                 <img src={logo} className="logo" alt="logo" />
                 <Nav />
@@ -70,9 +70,9 @@ return (
     <nav className="nav">
         <NavLink className="nav-item" to="/about" exact>О нас</NavLink>
         <NavLink className="nav-item" activeClassName = "active" to="/" exact>Услуги</NavLink>
-        <NavLink className="nav-item" to="/news" exact>Новости</NavLink>
-        <NavLink className="nav-item" to="/faq" exact>FAQ</NavLink>
-        <NavLink className="nav-item" to="/contacts" exact>Контакты</NavLink>
+        <NavLink className="nav-item" to="/expeditors" exact>Экспедиторам</NavLink>
+        <NavLink className="nav-item" to="/importers" exact>Импортерам</NavLink>
+        <NavLink className="nav-item" to="/exporters" exact>Экспортерам</NavLink>
     </nav>
 );
 }
