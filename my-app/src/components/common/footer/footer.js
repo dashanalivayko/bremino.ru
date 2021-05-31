@@ -42,12 +42,12 @@ function Footer() {
                     </div>
                     <NavFooter />
                     <div className="footer__footer">
-                        <p className="footer__lng">
-                           <img src={globo} />
-                           english version
-                        </p>
+                        <div className="footer__lng">
+                           <img className="footer__lng-icon" src={globo} />
+                           <a className="footer__lng-transfer" href="#">english version</a>
+                        </div>
                         <div className="footer__info">
-                            <a className="footer__info-item" href="#"><p className="footer__info-item">Карта сайта</p></a>
+                            <a className="footer__info-item" href="#">Карта сайта</a>
                             <p className="footer__info-item">
                                 © bremino group 2021
                             </p>
