@@ -1,0 +1,10 @@
+@import './src/colorPallette.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 50px 0;
+    flex-direction: column;
+    background-color: $verylightgray;
+}

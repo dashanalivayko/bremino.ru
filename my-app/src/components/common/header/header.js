@@ -69,7 +69,7 @@ function Nav() {
 return (
     <nav className="nav">
         <NavLink className="nav-item" to="/about" exact>О нас</NavLink>
-        <NavLink className="nav-item" activeClassName = "active" to="/" exact>Главная</NavLink>
+        <NavLink className="nav-item" activeClassName = "active" to="/" exact>Услуги</NavLink>
         <NavLink className="nav-item" to="/news" exact>Новости</NavLink>
         <NavLink className="nav-item" to="/faq" exact>FAQ</NavLink>
         <NavLink className="nav-item" to="/contacts" exact>Контакты</NavLink>

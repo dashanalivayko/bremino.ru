@@ -11,7 +11,7 @@ function Block(props) {
             <h2 className="block-subtitle">
                 {props.subtitle}
             </h2>
-            <div className="block-desc">
+            <div className={`block-desc ${props.className}`}>
                 <p className="block-text">
                     {props.children}
                 </p>

@@ -4,21 +4,31 @@ import './buttons.scss';
 
 function TransparentButton(props) {
     return (
-      <div className={props.className}>
-          <button className="transparent">
+      <Link to={props.to}>
+          <button className={`transparent ${props.className}`}>
               <p className="transparent-text">{props.children}</p>
           </button>
-       </div>
+       </Link>
+    );
+  }
+
+  function TransparentBlueButton(props) {
+    return (
+      <Link to={props.to}>
+          <button className={`transparentBlue ${props.className}`}>
+              <p className="transparentBlue-text">{props.children}</p>
+          </button>
+       </Link>
     );
   }
 
   function BlueButton(props) {
     return (
-      <div className={props.className}>
-        <button className="blue">
-            <p className="blue-text">{props.children}</p>
-        </button>
-       </div>
+        <Link className={props.className} to={props.to}>
+          <button className={`blue ${props.className}`}>
+              <p className="blue-text">{props.children}</p>
+          </button>
+        </Link>
     );
   }
 
@@ -33,4 +43,14 @@ function TransparentButton(props) {
     );
   }
 
-  export {TransparentButton, BlueButton, ReadMoreButton}
+  function ReadExactlyButton(props) {
+    return (
+      <Link className = "borded" to={props.to}>
+        <button className="readExactly">
+            <p className="readExactly-text">{props.children}</p>
+        </button>
+      </Link>
+    );
+  }
+
+  export {TransparentButton, BlueButton, ReadMoreButton, TransparentBlueButton, ReadExactlyButton}

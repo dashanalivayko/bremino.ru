@@ -1,6 +1,6 @@
 @import './src/colorPallette.scss';
 
-.callBanner{
+.callBannerBlue{
     background-color: $blue;
     padding: 60px 0;
     &__title {
@@ -19,4 +19,27 @@
         text-transform: uppercase;
         margin-bottom: 70px;
     }
+}
+
+.callBanner{
+    background-color: $blue;
+    // background-image: url('my-app/src/assets/car.png');
+    padding: 150px 250px;
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    // &__subtitle {
+    //     color: $white;
+    //     font-weight: 300;
+    //     font-size: 14px;
+    //     line-height: 15px;
+    //     text-transform: uppercase;
+    //     margin-bottom: 70px;
+    // }
 }

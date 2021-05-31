@@ -9,23 +9,23 @@ function Services(props) {
         <div className="services">
             <div className="wrapper">
                 <div className="services-cards">
-                    <ServicesCard src = {img.warehouse} title={'Складское хранение'}>
+                    <ServicesCard to={"/warehouses"} src = {img.warehouse} title={'Складское хранение'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.labling} title={'Маркировка товаров'}>
+                    <ServicesCard to={"/labeling"} src = {img.labling} title={'Маркировка товаров'}>
                     Алкогольные напитки, одежда, обувь, парфюм и духи, мороженное и сыры, 
                     продукты питания и напитки
                     </ServicesCard>
-                    <ServicesCard src = {img.crossDocking} title={'Услуги кросс-докинга'}>
+                    <ServicesCard to={"/cross-docking"} src = {img.crossDocking} title={'Услуги кросс-докинга'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.transport} title={'Транспортные услуги'}>
+                    <ServicesCard to={"/transportnie-uslugi"} src = {img.transport} title={'Транспортные услуги'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.avia} title={'Обслуживание авиа-грузов и транспорта'}>
+                    <ServicesCard to={"/avia"} src = {img.avia} title={'Обслуживание авиа-грузов и транспорта'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.others} title={'Дополнительные услуги'}>
+                    <ServicesCard to={"/additional"} src = {img.others} title={'Дополнительные услуги'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
                 </div>
