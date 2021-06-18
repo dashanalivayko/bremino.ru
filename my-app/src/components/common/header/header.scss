@@ -26,6 +26,23 @@
         text-transform: uppercase;
         text-decoration: none;
         color: $lightgray;
+        position: relative;
+        &__child {
+            color:black;
+            display: block;
+            width: max-content;
+            padding: 15px;
+            background: white;
+            border-bottom: 1px solid $lightblue;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: lowercase;
+            &:hover {
+                background-color: $lightblue;
+            }
+        }
     }
 }
 
@@ -61,4 +78,71 @@
 
 .marginLeftAuto {
     margin-left: auto;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  width: 323px;
+  border-right: 5px solid transparent;
+  &__two {
+      position: absolute;
+      left: 101%;
+      transform: scaleY(0);
+      background-color: red;
+      width: 100%;
+      z-index: 10;
+      transition: 0.5s ease-in-out;
+      transform: scaleY(0);
+      transform-origin: 0 0;
+  }
+}
+  .first {
+    top: 0;
+  }
+
+  .second {
+    top: 48px;
+  }
+
+  .third {
+    top: 97px;
+  }
+
+  .fourth {
+    top: 146px;
+  }
+
+  .fifth {
+    top: 196px;
+  }
+
+  .sixth {
+    top: 261px;
+  }
+
+
+  .nav-item:hover {
+    color: $activegray;
+  }
+
+  .nav-item:hover .submenu {
+    transform: scaleY(1);
+  }
+
+  .nav-item__child {
+    width: 100%;
+  &::first-letter {
+      font-size: 18px;
+  }
+  &:hover .submenu__two {
+    transform: scaleY(1);
+  }
 }

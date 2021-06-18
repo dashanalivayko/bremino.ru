@@ -1,0 +1,35 @@
+@import './src/colorPallette.scss';
+
+.notFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+    &__title {
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: $activegray;
+    }
+    &__subtitle {
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        // text-transform: uppercase;
+        color: $activegray;
+    }
+    &__pic {
+        width: 640px;
+        height: 490px;
+    }
+}

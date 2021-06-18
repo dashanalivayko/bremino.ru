@@ -40,6 +40,7 @@ import belviat from '../assets/belviat.png';
 import gec from '../assets/gec.png';
 import jenty from '../assets/jenty.png';
 import calc from '../assets/calc.svg';
+import lbdm from '../assets/lb-dm.png';
 
 import boxes from '../assets/boxes.svg';
 import bruzgi_tlc from '../assets/bruzgi_tlc.png';
@@ -50,6 +51,7 @@ import documents from '../assets/documents.svg';
 import pointblue from '../assets/pointblue.svg';
 import weightcar from '../assets/weightcar.svg';
 import lablingpng from '../assets/labling.svg';
+import developing from './developing.svg'
 
 import one from '../assets/one.svg';
 import two from '../assets/two.svg';
@@ -118,4 +120,6 @@ export const img = {
     belviat,
     alesta,
     calc,
+    developing,
+    lbdm,
 }

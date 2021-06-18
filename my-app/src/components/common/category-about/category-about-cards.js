@@ -13,9 +13,9 @@ function CategoryAboutCards() {
         </div>
     )};
 
-function CategoryAboutImg() {
+function CategoryAboutImg(props) {
     return (
-        <img className="CategoryAboutImg" src={img.banneralco} alt='pic' />
+        <img className="CategoryAboutImg" src={props.src} alt='pic' />
     )};
 
 export { CategoryAboutCards, CategoryAboutImg };

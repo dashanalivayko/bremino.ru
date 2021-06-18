@@ -6,8 +6,8 @@ import './cards.scss';
 
   function ServicesCard(props) {
     return (
-        <Link to={props.to} className="service" duration={1}>
-            <img className="service-icon" src = {props.src} />
+        <Link to={props.to} className={`service ${props?.className}`} duration={1} style={props?.style}>
+            <img className="service-icon" src = {props?.src} />
             <h3 className="service-title">{props.title}</h3>
             <p className="service-subtitle">{props.children}</p>
         </Link>
@@ -46,7 +46,7 @@ import './cards.scss';
 
   function AdditionalCard(props) {
     return (
-        <Link className={`additionalCard ${props?.className}`}>
+        <Link to={props.to} className={`additionalCard ${props?.className}`}>
           <div className="additionalCard__header">
             <p className="additionalCard__header-title">{props.title}</p>
             <p className="additionalCard__header-subtitle">{props.subtitle}</p>
@@ -59,10 +59,20 @@ import './cards.scss';
           </p>
           <div className="buttons">
             <TransparentBlueButton>заказать</TransparentBlueButton>
-            <ReadExactlyButton>подробнее</ReadExactlyButton>
+            <ReadExactlyButton to={props.to}>подробнее</ReadExactlyButton>
           </div>
         </Link>
     );
   }
 
-  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard, AboutCard };
+  function TarrifCard(props) {
+    return (
+        <Link to={props.to} className={`service ${props?.className}`} duration={1} style={props?.style}>
+            <img className="service-icon" src = {props?.src} />
+            <h3 className="service-title">{props.title}</h3>
+            <p className="service-subtitle">{props.children}</p>
+        </Link>
+    );
+  }
+
+  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard, AboutCard, TarrifCard};

@@ -1,15 +1,6 @@
 @import './src/colorPallette.scss';
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0 50px 0;
-    flex-direction: column;
-    background-color: $verylightgray;
-}
-
-.tarrif {
+.supply {
     padding: 50px 0 100px 0;
     // display: flex;
     // flex-direction: column;
@@ -27,8 +18,26 @@
         margin-top: 23px;
     }
     &__cards {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(480px, 575px));
+        grid-template-rows: repeat(3, 350px);
+        margin-top: 100px;
+        gap: 2px;
     }
+}
+
+.additionalCardForDM {
+    max-width: 575px !important;
+    height: 350px !important;
+}
+
+.icons {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.sostav {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
 }

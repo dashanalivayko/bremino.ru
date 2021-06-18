@@ -16,7 +16,6 @@ function Text(props) {
                 <h2 className="banner__content-subtitle">
                     {props.children}
                 </h2>
-                <TransparentButton className="transparent-banner">заказать звонок</TransparentButton>
             </div>
 
         </div>

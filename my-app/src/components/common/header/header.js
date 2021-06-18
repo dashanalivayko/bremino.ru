@@ -69,7 +69,55 @@ function Nav() {
 return (
     <nav className="nav">
         <NavLink className="nav-item" to="/about" exact>О нас</NavLink>
-        <NavLink className="nav-item" activeClassName = "active" to="/" exact>Услуги</NavLink>
+        <NavLink className="nav-item" activeClassName = "active" to="/" exact>Услуги
+            <div class="submenu">
+                <NavLink className="nav-item__child" to="/warehouses" exact>Складское хранение
+                    <div class="submenu__two first">
+                    <NavLink className="nav-item__child" to="/ts" exact>Таможенный склад </NavLink>
+                    <NavLink className="nav-item__child" to="/svh" exact>Склад временного хранения</NavLink>
+                    <NavLink className="nav-item__child" to="/sop" exact>Склад общего пользования</NavLink>
+                    <NavLink className="nav-item__child" to="/cold" exact>Склад-холодильник</NavLink>
+                    <NavLink className="nav-item__child" to="/open" exact>Открытая площадка</NavLink>
+                    </div>
+                </NavLink>
+                <NavLink className="nav-item__child" to="/labeling" exact>Маркировка товара
+                    <div class="submenu__two second">
+                        <NavLink className="nav-item__child" to="/data-matrix" exact>Маркировка DataMatrix</NavLink>
+                        <NavLink className="nav-item__child" to="/alco-labling" exact>Маркировка алкоголя</NavLink>
+                        <NavLink className="nav-item__child" to="/stickers" exact>Маркировка этикетками, стикерами</NavLink>
+                    </div>
+                </NavLink>
+                <NavLink className="nav-item__child" to="/cross-docking" exact>Услуги кросс-докинга
+                    <div class="submenu__two third">
+                        <NavLink className="nav-item__child" to="/usluga" exact>Одноэтапный кросс-докинг</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Двухэтапный кросс-докинг</NavLink>
+                    </div>
+                </NavLink>
+                <NavLink className="nav-item__child" to="/transportnie-uslugi" exact>Транспортно-экспедиционные услуги
+                    <div class="submenu__two fourth">
+                        <NavLink className="nav-item__child" to="/usluga" exact>Доставка</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Консолидация</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Услуги таможенных представителей</NavLink>
+                    </div>
+                </NavLink>
+                <NavLink className="nav-item__child" to="/avia" exact>Обслуживание авиагрузов и транспорта
+                    <div class="submenu__two fifth">
+                        <NavLink className="nav-item__child" to="/usluga" exact>Разгрузка/загрузка бортов</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Заправка авиасудов</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Хранение авиасудов в ангаре</NavLink>
+                    </div>
+                </NavLink>
+                <NavLink className="nav-item__child sixth" to="/additional" exact>Дополнительные услуги
+                     <div class="submenu__two sixth">
+                        <NavLink className="nav-item__child" to="/usluga" exact>Взвешивание</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Фотографирование</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Фитосанитарный контроль</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Ветеринарный контроль</NavLink>
+                        <NavLink className="nav-item__child" to="/usluga" exact>Упаковка</NavLink>
+                    </div>
+                </NavLink>
+            </div>
+        </NavLink>
         <NavLink className="nav-item" to="/expeditors" exact>Экспедиторам</NavLink>
         <NavLink className="nav-item" to="/importers" exact>Импортерам</NavLink>
         <NavLink className="nav-item" to="/exporters" exact>Экспортерам</NavLink>
@@ -78,3 +126,4 @@ return (
 }
   
 export default Header;
+

@@ -3,81 +3,89 @@ import { img } from '../../../assets/img';
 import { BlueButton } from '../buttons/buttons';
 import './category-advantage.scss';
 
-function CategoryAdvantage() {
+function CategoryAdvantage(props) {
     return (
     <div className="categoryAdvantage">
         <div className="wrapper-row wrapper">
             <div className="categoryAdvantage__points">
                 <div className="categoryAdvantage__points-item">
-                    <img className="categoryAdvantage__points-item__img" src={img.one} alt='one' />
+                    <p className="categoryAdvantage__points-item__img" >1</p>
                     <p className="categoryAdvantage__points-item__text">
                         <span>
-                            Экономия средств
+                        {props.onetitle}
                         </span>
-                        Отпадает необходимость в размещении товара на 
-                        склад и в оплате всех связанных с этим издержек
+                        {props.one}
                     </p>
                 </div>
                 <div className="categoryAdvantage__points-item">
-                    <img className="categoryAdvantage__points-item__img" src={img.two} alt='two' />
+                    <p className="categoryAdvantage__points-item__img" >2</p>
                     <p className="categoryAdvantage__points-item__text">
                         <span>
-                            существенное снижение рисков
+                        {props.twotitle}
                         </span>
-                        Отпадает необходимость в размещении товара на 
-                        склад и в оплате всех связанных с этим издержек
+                        {props.two}
                     </p>
                 </div>
                 <div className="categoryAdvantage__points-item">
-                    <img className="categoryAdvantage__points-item__img" src={img.three} alt='three' />
+                    <p className="categoryAdvantage__points-item__img">3</p>
                     <p className="categoryAdvantage__points-item__text">
                         <span>
-                            упрощение и оптимизация
+                        {props.threetitle}
                         </span>
-                        Отпадает необходимость в размещении товара на 
-                        склад и в оплате всех связанных с этим издержек
+                        {props.three}
                     </p>
                 </div>
                 <div className="categoryAdvantage__points-item">
-                    <img className="categoryAdvantage__points-item__img" src={img.four} alt='four' />
+                    <p className="categoryAdvantage__points-item__img">4</p>
                     <p className="categoryAdvantage__points-item__text">
                         <span>
-                            значительная экономия времени
+                        {props.fourtitle}
                         </span>
-                        Отпадает необходимость в размещении товара на 
-                        склад и в оплате всех связанных с этим издержек
+                        {props.four}
                     </p>
                 </div>
                 <div className="categoryAdvantage__points-item">
-                    <img className="categoryAdvantage__points-item__img" src={img.five} alt='five' />
+                    <p className="categoryAdvantage__points-item__img">5</p>
                     <p className="categoryAdvantage__points-item__text">
                         <span>
-                            оказание дополнительных услуг
+                        {props.fivetitle}
                         </span>
-                        Отпадает необходимость в размещении товара на 
-                        склад и в оплате всех связанных с этим издержек
+                        {props.five}
+                    </p>
+                </div>
+                <div className="categoryAdvantage__points-item">
+                    <p className="categoryAdvantage__points-item__img">6</p>
+                    <p className="categoryAdvantage__points-item__text">
+                        <span>
+                        {props.sixtitle}
+                        </span>
+                        {props.six}
+                    </p>
+                </div>
+                <div className="categoryAdvantage__points-item">
+                    <p className="categoryAdvantage__points-item__img">7</p>
+                    <p className="categoryAdvantage__points-item__text">
+                        <span>
+                        {props.seventitle}
+                        </span>
+                        {props.seven}
+                    </p>
+                </div>
+                <div className="categoryAdvantage__points-item">
+                    <p className="categoryAdvantage__points-item__img">8</p>
+                    <p className="categoryAdvantage__points-item__text">
+                        <span>
+                        {props.eighttitle}
+                        </span>
+                        {props.eight}
                     </p>
                 </div>
             </div>
             <div className="categoryAdvantage__description">
                 <p className="categoryAdvantage__description-title">Преимущества маркировки</p>
                 <p className="categoryAdvantage__description-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it 
-                    to make a type specimen book.
-                    <br />
-                    <br />
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it 
-                    to make a type specimen book.
-                    <br />
-                    <br />
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it 
-                    to make a type specimen book.</p>
+                    {props.description}</p>
+                <p className="categoryAdvantage__description-text">{props.add}</p>
                 <BlueButton>заказать</BlueButton>
             </div>
         </div>

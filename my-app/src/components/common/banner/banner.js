@@ -3,6 +3,7 @@ import Text from './text'
 
 
 import './banner.scss';
+import { TransparentButton } from '../buttons/buttons';
 
 
 function Banner(props) {

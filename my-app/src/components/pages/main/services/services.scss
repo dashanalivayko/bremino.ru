@@ -8,6 +8,11 @@
         flex-wrap: wrap;
         flex-shrink: 0;
         justify-content: center;
+        position: relative;
+        // &:hover .background{
+        //     background-color: white;
+        //     display: flex;
+        // }
     }
     &-title {
         font-style: normal;
@@ -20,3 +25,4 @@
         margin: 100px 0 30px 0;
     }
 }
+

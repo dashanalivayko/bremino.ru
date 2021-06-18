@@ -1,33 +1,35 @@
 import React from 'react';
 import Banner from '../../../common/banner/banner';
-import Map from '../../../common/map/map';
-import Gallery from '../../../common/gallery/gallery';
 import Header from '../../../common/header/header';
 import Footer from '../../../common/footer/footer';
 import { img } from '../../../../assets/img';
-import '../labeling.scss';
+import './lablingdm.scss';
 import Advantages from '../../../common/advantages/advantages';
 import Partners from '../../../common/partners/partners';
-import Block from '../../../common/block/block';
 import CategoryAbout from '../../../common/category-about/category-about';
 import CategoryAdvantage from '../../../common/category-advantage/category-advantage';
 import HowWeWork from '../../../common/howWeWork/howWeWork';
 import { CallBanner } from '../../../common/callBanner/callBanner';
 import SupplyForDM from './SupplyForDM/SupplyForDM';
+import Additional from '../../../common/additional/additional';
+import TarrifForDM from './tarrifForDM/tarrif';
 
-function Lablingdm() {
+function ShoesDM() {
     return (
         <div>
             <Header />
-            <Banner
-                contentVideo={<img src={img.labeldm} alt='img' />}
-                contentName={'DataMatrix маркировка'}
-                contentTitle={'быстро качественно выгодно'}>
-                Маркировка товаров DataMatrix кодами для импортеров в Российскую Федерацию и Республику Беларусь.
-            </Banner>
+            <p className="head-title">маркировка обуви</p>
             <CategoryAbout cards={false} src={img.lbdm} video={"https://www.youtube.com/watch?v=2UXNdgC6O88&ab_channel=BreminoGroup"}
-            title={'самое сложное мы готовы взять на себя'} subtitle={'ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику. Опыт, квалификация сотрудников и надежные партнерские отношения позволяют предлагать клиентам разнообразные готовые решения для их бизнеса, в том числе организовывать совместно с заказчиком проработку новых направлений или товарных групп.'}/>
-            <SupplyForDM/>
+            title={'осуществляем:'} subtitle='маркировку товаров с нанесением стикера на розничную упаковку;
+            маркировку товаров без розничной упаковки с нанесением стикера на изделие или ярлык;
+            маркировку товара с навесом ярлыков;
+            маркировку товаров с установкой антикражных датчиков;
+            иные варианты обработки товаров с последующей маркировкой.'>
+            <p> <br/>Код ТН ВЭД ЕАЭС Обувных товаров, подлежащих маркировке:
+            <span className="numbers"> <br/>6401, 6402, 6403, 6404, 6405 </span></p>
+            </CategoryAbout>
+            <TarrifForDM />
+            {/* <SupplyForDM/> */}
             <CategoryAdvantage 
                                onetitle={'Стоимость ниже'}
                                one={'Стоимость маркировки сопоставимо ниже, чем на складах Европы'}
@@ -58,15 +60,12 @@ function Lablingdm() {
                                when an unknown printer took a galley of type and scrambled it 
                                to make a type specimen book.`} 
                                add={`*терминалы, расположенные в примыкании к границе с Республикой Польша`}/>                          
-            <HowWeWork />
-            <Partners />
-            <CallBanner />
-            <Advantages />
+            <Additional/>
             <Footer />
         </div>
     );
 }
 
-export default Lablingdm;
+export default ShoesDM;
 
 

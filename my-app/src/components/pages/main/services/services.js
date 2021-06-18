@@ -9,12 +9,12 @@ function Services(props) {
         <div className="services">
             <div className="wrapper">
                 <div className="services-cards">
-                    <ServicesCard to={"/warehouses"} src = {img.warehouse} title={'Складское хранение'}>
+                    {/* <div className="background"></div> */}
+                    <ServicesCard to={"/warehouses"} src = {img.warehouse} title={'Складское хранение'} className="warehouses-card">
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard to={"/labeling"} src = {img.labling} title={'Маркировка товаров'}>
-                    Алкогольные напитки, одежда, обувь, парфюм и духи, мороженное и сыры, 
-                    продукты питания и напитки
+                    <ServicesCard to={"/labeling"} src = {img.labling} title={'Маркировка товаров'} className="labling-card">
+                    Алкогольные напитки, одежда, обувь, парфюм и духи, мороженное и сыры, продукты питания и напитки
                     </ServicesCard>
                     <ServicesCard to={"/cross-docking"} src = {img.crossDocking} title={'Услуги кросс-докинга'}>
                     Таможенные склады, склады временного хранения и общего пользования
@@ -40,13 +40,13 @@ function Services(props) {
             <div >
                 <h3 className="services-title">Отраслевые решения</h3>
                 <div className="services-cards">
-                    <ServicesCard src = {img.ekspeditor} title={'Экспедиторам'}>
+                    <ServicesCard to={"/expeditors"} src = {img.ekspeditor} title={'Экспедиторам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.importer} title={'Импортерам'}>
+                    <ServicesCard to={"/importers"} src = {img.importer} title={'Импортерам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard src = {img.exporter} title={'Экспортерам'}>
+                    <ServicesCard to={"/exporters"} src = {img.exporter} title={'Экспортерам'}>
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
                 </div>
