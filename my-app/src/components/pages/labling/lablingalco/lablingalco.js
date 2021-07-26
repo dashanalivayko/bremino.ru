@@ -3,37 +3,37 @@ import Banner from '../../../common/banner/banner';
 import Header from '../../../common/header/header';
 import Footer from '../../../common/footer/footer';
 import { img } from '../../../../assets/img';
-import './lablingdm.scss';
+import '../labling.scss';
 import Advantages from '../../../common/advantages/advantages';
 import Partners from '../../../common/partners/partners';
 import CategoryAbout from '../../../common/category-about/category-about';
 import CategoryAdvantage from '../../../common/category-advantage/category-advantage';
 import HowWeWork from '../../../common/howWeWork/howWeWork';
 import { CallBanner } from '../../../common/callBanner/callBanner';
-import SupplyForDM from './SupplyForDM/SupplyForDM';
-import Additional from '../../../common/additional/additional';
-import TarrifForDM from './tarrifForDM/tarrif';
+import Supply from '../supply/supply';
 
-function ShoesDM() {
+function Lablingalco() {
     return (
         <div>
             <Header />
-            <p className="head-title">маркировка обуви</p>
+            <Banner
+                contentVideo={<img src={img.labeldm} alt='img' />}
+                contentName={'DataMatrix маркировка'}
+                contentTitle={'быстро качественно выгодно'}>
+                Маркировка товаров DataMatrix кодами для импортеров в Российскую Федерацию и Республику Беларусь.
+            </Banner>
             <CategoryAbout cards={false} src={img.lbdm} video={"https://www.youtube.com/watch?v=2UXNdgC6O88&ab_channel=BreminoGroup"}
-            title={'осуществляем:'} subtitle='маркировку товаров с нанесением стикера на розничную упаковку;
-            маркировку товаров без розничной упаковки с нанесением стикера на изделие или ярлык;
-            маркировку товара с навесом ярлыков;
-            маркировку товаров с установкой антикражных датчиков;
-            иные варианты обработки товаров с последующей маркировкой.'>
-            <p> <br/>Код ТН ВЭД ЕАЭС Обувных товаров, подлежащих маркировке:
-            <span className="numbers"> <br/>6401, 6402, 6403, 6404, 6405 </span></p>
-            </CategoryAbout>
-            <TarrifForDM />
-            {/* <SupplyForDM/> */}
+            title={'самое сложное мы готовы взять на себя'} subtitle={'ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику. Опыт, квалификация сотрудников и надежные партнерские отношения позволяют предлагать клиентам разнообразные готовые решения для их бизнеса, в том числе организовывать совместно с заказчиком проработку новых направлений или товарных групп.'}/>
+            <Supply title1={'Маркировку акцизными марками вина и др. крепкого алкоголя'} link1={"/excise"}
+                    title2={'Маркировку алкоголя в сувенирной упаковке'} link2={"/suvenir"}
+                    title3={"Маркировку пива в жестяных банках"} link3={"/beer-can"}
+                    title4={"Маркировку пива в стеклянной таре"} link4={"/beer-glass"}
+                    title5={"Маркировку пива в кегах"} link5={"/beer-keg"}
+                    title6={"Маркировку других слабоалкогольных напитков"} link6={"/alcodrinks"}/> 
             <CategoryAdvantage 
-                               onetitle={'Стоимость ниже'}
+                            //    onetitle={'Стоимость ниже'}
                                one={'Стоимость маркировки сопоставимо ниже, чем на складах Европы'}
-                               twotitle={'Экономия средств'}
+                            //    twotitle={'Экономия средств'}
                                two={'Маркировка на территории ЕАЭС (стоимость услуг не включается в таможенную стоимость)'}
                             //    threetitle={'заголовок'}
                                three={'Среднее время маркировки 30 тыс ед. до 24 часов (возможность маркировки до 15 партий товара единовременно)'}
@@ -60,12 +60,15 @@ function ShoesDM() {
                                when an unknown printer took a galley of type and scrambled it 
                                to make a type specimen book.`} 
                                add={`*терминалы, расположенные в примыкании к границе с Республикой Польша`}/>                          
-            <Additional/>
+            <HowWeWork />
+            <Partners />
+            <CallBanner />
+            <Advantages />
             <Footer />
         </div>
     );
 }
 
-export default ShoesDM;
+export default Lablingalco;
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import './footer.scss';
 import facebook from '../../../assets/facebook.svg';
@@ -64,37 +64,36 @@ function Footer() {
         <nav className="nav-footer">
             <div className="nav-footer__block">
                 <p className="nav-footer__headline">услуги компании</p>
-                <NavLink className="nav-footer__item" to="/warehousing" exact>Услуги хранения</NavLink>
-                <NavLink className="nav-footer__item" to="/labling" exact>Маркировка товаров</NavLink>
-                <NavLink className="nav-footer__item" to="/cross-docking" exact>Услуги кросс-докинга</NavLink>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>Транспортные услуги</NavLink>
+                <Link className="nav-footer__item" to="/warehousing" exact>Услуги хранения</Link>
+                <Link className="nav-footer__item" to="/labling" exact>Маркировка товаров</Link>
+                <Link className="nav-footer__item" to="/cross-docking" exact>Услуги кросс-докинга</Link>
+                <Link className="nav-footer__item" to="/transportnie-uslugi" exact>Транспортные услуги</Link>
             </div>
             <div className="nav-footer__block">
-                <NavLink className="nav-footer__item" to="/warehousing" exact>Услуги кросс-докинга</NavLink>
-                <NavLink className="nav-footer__item" to="/labling" exact>Услуги по обслуживанию авиагрузов и транспорта</NavLink>
-                <NavLink className="nav-footer__item" to="/cross-docking" exact>Дополнительные услуги</NavLink>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>Отраслевые решения</NavLink>
+                <Link className="nav-footer__item" to="/avia" exact>Услуги по обслуживанию авиагрузов и транспорта</Link>
+                <Link className="nav-footer__item" to="/additional" exact>Дополнительные услуги</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Отраслевые решения</Link>
             </div>
-            <div className="nav-footer__block">
+            {/* <div className="nav-footer__block">
                 <p className="nav-footer__headline"> Для клиента</p>
-                <NavLink className="nav-footer__item" to="/warehousing" exact>Заполнение CMR</NavLink>
-                <NavLink className="nav-footer__item" to="/labling" exact>Пример технического задания</NavLink>
-                <NavLink className="nav-footer__item" to="/cross-docking" exact>Оплата услуг</NavLink>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>FAQS</NavLink>
-            </div>
-            <div className="nav-footer__block">
+                <Link className="nav-footer__item" to="/usluga" exact>Заполнение CMR</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Пример технического задания</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Оплата услуг</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>FAQS</Link>
+            </div> */}
+            {/* <div className="nav-footer__block">
                 <p className="nav-footer__headline">Документы</p>
-                <NavLink className="nav-footer__item" to="/warehousing" exact>Правовая информая</NavLink>
-                <NavLink className="nav-footer__item" to="/labling" exact>Договор на хранение</NavLink>
-                <NavLink className="nav-footer__item" to="/cross-docking" exact>Презентация компании</NavLink>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>Сертификаты</NavLink>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>Реквизиты компании</NavLink>
-            </div>
+                <Link className="nav-footer__item" to="/usluga" exact>Правовая информая</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Договор на хранение</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Презентация компании</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Сертификаты</Link>
+                <Link className="nav-footer__item" to="/usluga" exact>Реквизиты компании</Link>
+            </div> */}
             <div className="nav-footer__block">
-                <p className="nav-footer__headline">Новости</p>
-                <p className="nav-footer__headline">О компании</p>
-                <p className="nav-footer__headline">Партнерам</p>
-                <NavLink className="nav-footer__item" to="/transportnie-uslugi" exact>Предложения о сотрудничестве</NavLink>
+                <Link className="nav-footer__headline" to="/usluga" exact>Новости</Link>
+                <Link className="nav-footer__headline" to="/about" exact>О компании</Link>
+                <Link className="nav-footer__headline" to="/usluga" exact>Партнерам</Link>
+                <Link className="nav-footer__item" to="/transportnie-uslugi" exact>Предложения о сотрудничестве</Link>
             </div>
         </nav>
     );

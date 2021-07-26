@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NavLink, Switch, Route, Router } from 'react-router-dom';
+import { NavLink, Switch, Route, Router, Link } from 'react-router-dom';
 
 import './header.scss';
 import logo from '../../../assets/logo-big.png';
@@ -71,51 +71,51 @@ return (
         <NavLink className="nav-item" to="/about" exact>О нас</NavLink>
         <NavLink className="nav-item" activeClassName = "active" to="/" exact>Услуги
             <div class="submenu">
-                <NavLink className="nav-item__child" to="/warehouses" exact>Складское хранение
+                <Link className="nav-item__child" to="/warehouses" exact>Складское хранение
                     <div class="submenu__two first">
-                    <NavLink className="nav-item__child" to="/ts" exact>Таможенный склад </NavLink>
-                    <NavLink className="nav-item__child" to="/svh" exact>Склад временного хранения</NavLink>
-                    <NavLink className="nav-item__child" to="/sop" exact>Склад общего пользования</NavLink>
-                    <NavLink className="nav-item__child" to="/cold" exact>Склад-холодильник</NavLink>
-                    <NavLink className="nav-item__child" to="/open" exact>Открытая площадка</NavLink>
+                    <Link className="nav-item__child" to="/ts" exact>Таможенный склад </Link>
+                    <Link className="nav-item__child" to="/svh" exact>Склад временного хранения</Link>
+                    <Link className="nav-item__child" to="/sop" exact>Склад общего пользования</Link>
+                    <Link className="nav-item__child" to="/cold" exact>Склад-холодильник</Link>
+                    <Link className="nav-item__child" to="/open" exact>Открытая площадка</Link>
                     </div>
-                </NavLink>
-                <NavLink className="nav-item__child" to="/labeling" exact>Маркировка товара
+                </Link>
+                <Link className="nav-item__child" to="/labling" exact>Маркировка товара
                     <div class="submenu__two second">
-                        <NavLink className="nav-item__child" to="/data-matrix" exact>Маркировка DataMatrix</NavLink>
-                        <NavLink className="nav-item__child" to="/alco-labling" exact>Маркировка алкоголя</NavLink>
-                        <NavLink className="nav-item__child" to="/stickers" exact>Маркировка этикетками, стикерами</NavLink>
+                        <Link className="nav-item__child" to="/data-matrix" exact>Маркировка DataMatrix</Link>
+                        <Link className="nav-item__child" to="/alco-labling" exact>Маркировка алкоголя</Link>
+                        <Link className="nav-item__child" to="/stickers" exact>Маркировка этикетками, стикерами</Link>
                     </div>
-                </NavLink>
-                <NavLink className="nav-item__child" to="/cross-docking" exact>Услуги кросс-докинга
+                </Link>
+                <Link className="nav-item__child" to="/cross-docking" exact>Услуги кросс-докинга
                     <div class="submenu__two third">
-                        <NavLink className="nav-item__child" to="/usluga" exact>Одноэтапный кросс-докинг</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Двухэтапный кросс-докинг</NavLink>
+                        <Link className="nav-item__child" to="/usluga" exact>Одноэтапный кросс-докинг</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Двухэтапный кросс-докинг</Link>
                     </div>
-                </NavLink>
-                <NavLink className="nav-item__child" to="/transportnie-uslugi" exact>Транспортно-экспедиционные услуги
+                </Link>
+                <Link className="nav-item__child" to="/transportnie-uslugi" exact>Транспортно-экспедиционные услуги
                     <div class="submenu__two fourth">
-                        <NavLink className="nav-item__child" to="/usluga" exact>Доставка</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Консолидация</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Услуги таможенных представителей</NavLink>
+                        <Link className="nav-item__child" to="/usluga" exact>Доставка</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Консолидация</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Услуги таможенных представителей</Link>
                     </div>
-                </NavLink>
-                <NavLink className="nav-item__child" to="/avia" exact>Обслуживание авиагрузов и транспорта
+                </Link>
+                <Link className="nav-item__child" to="/avia" exact>Обслуживание авиагрузов и транспорта
                     <div class="submenu__two fifth">
-                        <NavLink className="nav-item__child" to="/usluga" exact>Разгрузка/загрузка бортов</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Заправка авиасудов</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Хранение авиасудов в ангаре</NavLink>
+                        <Link className="nav-item__child" to="/usluga" exact>Разгрузка/загрузка бортов</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Заправка авиасудов</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Хранение авиасудов в ангаре</Link>
                     </div>
-                </NavLink>
-                <NavLink className="nav-item__child sixth" to="/additional" exact>Дополнительные услуги
+                </Link>
+                <Link className="nav-item__child sixth" to="/additional" exact>Дополнительные услуги
                      <div class="submenu__two sixth">
-                        <NavLink className="nav-item__child" to="/usluga" exact>Взвешивание</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Фотографирование</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Фитосанитарный контроль</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Ветеринарный контроль</NavLink>
-                        <NavLink className="nav-item__child" to="/usluga" exact>Упаковка</NavLink>
+                        <Link className="nav-item__child" to="/usluga" exact>Взвешивание</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Фотографирование</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Фитосанитарный контроль</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Ветеринарный контроль</Link>
+                        <Link className="nav-item__child" to="/usluga" exact>Упаковка</Link>
                     </div>
-                </NavLink>
+                </Link>
             </div>
         </NavLink>
         <NavLink className="nav-item" to="/expeditors" exact>Экспедиторам</NavLink>

@@ -1,20 +1,18 @@
 import React from 'react';
-import Banner from '../../common/banner/banner';
-import Header from '../../common/header/header';
-import Footer from '../../common/footer/footer';
-import { img } from '../../../assets/img';
-// import './warehouses.scss';
-import Advantages from '../../common/advantages/advantages';
-import Partners from '../../common/partners/partners';
-import CategoryAbout from '../../common/category-about/category-about';
-import CategoryAdvantage from '../../common/category-advantage/category-advantage';
-import HowWeWork from '../../common/howWeWork/howWeWork';
-import { CallBanner } from '../../common/callBanner/callBanner';
-import Supply from '../../pages/labling/supply/supply';
-import Tarrif from '../labling/tarrif/tarrif';
-import { ProductCard } from '../../common/cards/cards';
+import Banner from '../../../common/banner/banner';
+import Header from '../../../common/header/header';
+import Footer from '../../../common/footer/footer';
+import { img } from '../../../../assets/img';
+import '../labling.scss';
+import Advantages from '../../../common/advantages/advantages';
+import Partners from '../../../common/partners/partners';
+import CategoryAbout from '../../../common/category-about/category-about';
+import CategoryAdvantage from '../../../common/category-advantage/category-advantage';
+import HowWeWork from '../../../common/howWeWork/howWeWork';
+import { CallBanner } from '../../../common/callBanner/callBanner';
+import Supply from '../supply/supply';
 
-function Transport() {
+function Lablingdm() {
     return (
         <div>
             <Header />
@@ -26,6 +24,12 @@ function Transport() {
             </Banner>
             <CategoryAbout cards={false} src={img.lbdm} video={"https://www.youtube.com/watch?v=2UXNdgC6O88&ab_channel=BreminoGroup"}
             title={'самое сложное мы готовы взять на себя'} subtitle={'ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику. Опыт, квалификация сотрудников и надежные партнерские отношения позволяют предлагать клиентам разнообразные готовые решения для их бизнеса, в том числе организовывать совместно с заказчиком проработку новых направлений или товарных групп.'}/>
+            <Supply title1={'Маркировку обуви'} link1={"/shoes-dm"}
+                    title2={'Маркировку питьевой воды'} link2={"/water-dm" }
+                    title3={"Маркировку товаров легкой промышленности"} link3={"/clothes-dm"}
+                    title4={"Маркировку духов и парфюма"} link4={"/parfum-dm"}
+                    title5={"Маркировку молочной продукции"} link5={"/milk-dm"}
+                    title6={"Маркировку шин и покрышек"} link6={"/tire-dm"}/>
             <CategoryAdvantage 
                               //  onetitle={'Стоимость ниже'}
                                one={'Стоимость маркировки сопоставимо ниже, чем на складах Европы'}
@@ -57,12 +61,6 @@ function Transport() {
                                to make a type specimen book.`} 
                                add={`*терминалы, расположенные в примыкании к границе с Республикой Польша`}/>                          
             <HowWeWork />
-            <Tarrif title='тариф на хранение'>
-                <ProductCard title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
-                <ProductCard className="row-reverse" title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
-                <ProductCard title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
-                <ProductCard className="row-reverse" title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
-            </Tarrif>
             <Partners />
             <CallBanner />
             <Advantages />
@@ -71,6 +69,6 @@ function Transport() {
     );
 }
 
-export default Transport;
+export default Lablingdm;
 
 

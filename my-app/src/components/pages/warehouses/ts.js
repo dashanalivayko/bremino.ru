@@ -3,7 +3,7 @@ import Banner from '../../common/banner/banner';
 import Header from '../../common/header/header';
 import Footer from '../../common/footer/footer';
 import { img } from '../../../assets/img';
-// import './warehouses.scss';
+import './warehouses.scss';
 import Advantages from '../../common/advantages/advantages';
 import Partners from '../../common/partners/partners';
 import CategoryAbout from '../../common/category-about/category-about';
@@ -11,10 +11,10 @@ import CategoryAdvantage from '../../common/category-advantage/category-advantag
 import HowWeWork from '../../common/howWeWork/howWeWork';
 import { CallBanner } from '../../common/callBanner/callBanner';
 import Supply from '../../pages/labling/supply/supply';
-import Tarrif from '../labling/tarrif/tarrif';
 import { ProductCard } from '../../common/cards/cards';
+import Tarrif from '../labling/tarrif/tarrif';
 
-function Transport() {
+function WarehouseTS() {
     return (
         <div>
             <Header />
@@ -71,6 +71,6 @@ function Transport() {
     );
 }
 
-export default Transport;
+export default WarehouseTS;
 
 

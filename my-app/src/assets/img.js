@@ -24,6 +24,7 @@ import banneralco from '../assets/banneralco.png';
 import bannerwarehouses from '../assets/bannerwarehouses.png';
 import labelone from '../assets/labelone.jpg';
 import labeldm from '../assets/labeldm.jpg';
+import lablingDM from '../assets/lablingDM.png';
 import left from '../assets/left.svg';
 import right from '../assets/right.svg';
 import berestovitcatlc from '../assets/berestovitcatlc.jpg';
@@ -58,6 +59,14 @@ import two from '../assets/two.svg';
 import three from '../assets/three.svg';
 import four from '../assets/four.svg';
 import five from '../assets/five.svg';
+
+import duhi from '../assets/duhi.png';
+import tapki from '../assets/tapki.png';
+import shoes from '../assets/shoes.png';
+import tire from '../assets/tier.png';
+import clothes from '../assets/clothes.png';
+import milk from '../assets/milk.png';
+import water from '../assets/water.png';
 
 
 
@@ -122,4 +131,13 @@ export const img = {
     calc,
     developing,
     lbdm,
+
+    duhi,
+    tapki,
+    shoes,
+    tire,
+    milk,
+    water,
+    clothes,
+    lablingDM,
 }

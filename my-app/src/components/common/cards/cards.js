@@ -65,14 +65,26 @@ import './cards.scss';
     );
   }
 
-  function TarrifCard(props) {
+  function ProductCard(props) {
     return (
-        <Link to={props.to} className={`service ${props?.className}`} duration={1} style={props?.style}>
-            <img className="service-icon" src = {props?.src} />
-            <h3 className="service-title">{props.title}</h3>
-            <p className="service-subtitle">{props.children}</p>
+        <Link to={props.to} className={`productCard ${props?.className}`}>
+          {/* <div style={{width: '400px', justifyContent: 'center', display: 'flex'}}> */}
+           <img className="productCard-icon" src = {props?.src} />
+          {/* </div> */}
+            <div className="productCard__header">
+              <p className="productCard__header-title">{props.title}</p>
+              <div className="productCard__header-title--under"></div>
+              <p className="productCard__header-subtitle">{props.subtitle}</p>
+            <p className="productCard__places">
+              Место оказания услуг:
+              <p className="productCard__places-item">
+                {props.children}
+              </p>
+            </p>
+            <TransparentBlueButton>заказать</TransparentBlueButton>
+          </div>
         </Link>
     );
   }
 
-  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard, AboutCard, TarrifCard};
+  export { ServicesCard, AdvantagesCard, NewsCard, AdditionalCard, AboutCard, ProductCard};

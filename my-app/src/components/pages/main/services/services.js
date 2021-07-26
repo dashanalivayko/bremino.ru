@@ -13,7 +13,7 @@ function Services(props) {
                     <ServicesCard to={"/warehouses"} src = {img.warehouse} title={'Складское хранение'} className="warehouses-card">
                     Таможенные склады, склады временного хранения и общего пользования
                     </ServicesCard>
-                    <ServicesCard to={"/labeling"} src = {img.labling} title={'Маркировка товаров'} className="labling-card">
+                    <ServicesCard to={"/labling"} src = {img.labling} title={'Маркировка товаров'} className="labling-card">
                     Алкогольные напитки, одежда, обувь, парфюм и духи, мороженное и сыры, продукты питания и напитки
                     </ServicesCard>
                     <ServicesCard to={"/cross-docking"} src = {img.crossDocking} title={'Услуги кросс-докинга'}>

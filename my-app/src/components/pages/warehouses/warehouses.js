@@ -1,11 +1,7 @@
 import React from 'react';
 import Header from '../../common/header/header';
 import Banner from '../../common/banner/banner';
-import Advantages from '../../common/advantages/advantages';
-import Video from '../../pages/main/video/video';
-import Reviews from '../../pages/main/reviews/reviews';
 import Partners from '../../common/partners/partners';
-import Map from '../../common/map/map';
 import Footer from '../../common/footer/footer';
 import { CallBanner } from '../../common/callBanner/callBanner';
 import { img } from '../../../assets/img';
@@ -15,11 +11,9 @@ import Block from '../../common/block/block';
 import { BlueButton, TransparentBlueButton, TransparentButton } from '../../common/buttons/buttons';
 import Additional from '../../common/additional/additional';
 import Gallery from '../../common/gallery/gallery';
-import Main from '../main/main';
+
 
 function Warehouses() {
-
-    // const onAlcoLabling = () => {return < Main />};
 
     return (
         <div>
@@ -84,7 +78,6 @@ function Warehouses() {
                     </ Block>
                 </div>
             </div>
-            {/* <Advantages /> */}
             <Partners />
             <CallBanner />
             <Additional />

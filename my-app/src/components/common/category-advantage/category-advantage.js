@@ -82,7 +82,7 @@ function CategoryAdvantage(props) {
                 </div>
             </div>
             <div className="categoryAdvantage__description">
-                <p className="categoryAdvantage__description-title">Преимущества маркировки</p>
+                <p className="categoryAdvantage__description-title">Об услуге:</p>
                 <p className="categoryAdvantage__description-text">
                     {props.description}</p>
                 <p className="categoryAdvantage__description-text">{props.add}</p>

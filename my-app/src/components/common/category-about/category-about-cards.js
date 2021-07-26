@@ -6,10 +6,10 @@ import './category-about.scss';
 function CategoryAboutCards() {
     return (
         <div className="about__behold">
-            < AboutCard />
-            < AboutCard />
-            < AboutCard />
-            < AboutCard />
+            < AboutCard src={img.boxes}/>
+            < AboutCard src={img.boxes}/>
+            < AboutCard src={img.boxes}/>
+            < AboutCard src={img.boxes}/>
         </div>
     )};
 

@@ -3,7 +3,7 @@ import Banner from '../../common/banner/banner';
 import Header from '../../common/header/header';
 import Footer from '../../common/footer/footer';
 import { img } from '../../../assets/img';
-// import './warehouses.scss';
+import './warehouses.scss';
 import Advantages from '../../common/advantages/advantages';
 import Partners from '../../common/partners/partners';
 import CategoryAbout from '../../common/category-about/category-about';
@@ -14,7 +14,7 @@ import Supply from '../../pages/labling/supply/supply';
 import Tarrif from '../labling/tarrif/tarrif';
 import { ProductCard } from '../../common/cards/cards';
 
-function Transport() {
+function WarehouseOPEN() {
     return (
         <div>
             <Header />
@@ -71,6 +71,6 @@ function Transport() {
     );
 }
 
-export default Transport;
+export default WarehouseOPEN;
 
 

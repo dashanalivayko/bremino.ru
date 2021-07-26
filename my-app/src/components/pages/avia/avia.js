@@ -1,77 +1,76 @@
 import React from 'react';
-import Header from '../../common/header/header';
 import Banner from '../../common/banner/banner';
-import Advantages from '../../common/advantages/advantages';
-import Video from '../../pages/main/video/video';
-import Reviews from '../../pages/main/reviews/reviews';
-import Partners from '../../common/partners/partners';
-import Map from '../../common/map/map';
+import Header from '../../common/header/header';
 import Footer from '../../common/footer/footer';
-import { CallBanner } from '../../common/callBanner/callBanner';
 import { img } from '../../../assets/img';
 
-import './avia.scss';
-import Block from '../../common/block/block';
-import { BlueButton, TransparentBlueButton, TransparentButton } from '../../common/buttons/buttons';
-import Additional from '../../common/additional/additional';
-import Gallery from '../../common/gallery/gallery';
-import Main from '../main/main';
+import Advantages from '../../common/advantages/advantages';
+import Partners from '../../common/partners/partners';
+import CategoryAbout from '../../common/category-about/category-about';
+import CategoryAdvantage from '../../common/category-advantage/category-advantage';
+import HowWeWork from '../../common/howWeWork/howWeWork';
+import { CallBanner } from '../../common/callBanner/callBanner';
+import Supply from '../../pages/labling/supply/supply';
+import Tarrif from '../labling/tarrif/tarrif';
+import { ProductCard } from '../../common/cards/cards';
 
 function Avia() {
-
-    // const onAlcoLabling = () => {return < Main />};
-
     return (
         <div>
             <Header />
-            {/* <Banner
-                contentVideo={<iframe width="600" height="600" src="https://www.youtube.com/embed/2UXNdgC6O88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
-                contentName={'Маркировка товаров'}
-                contentTitle={'Акциз Этикетка Datamatrix'}>
-                ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику.
-            </Banner> */}
-            <div className="container">
-                <div className="wrapper">
-                    < Block title={'маркировка алкогольных напитков'} subtitle={'с помарочным учетом'} src={img.orsha}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        <div className="buttons">
-                            <BlueButton>Заказать расчет</BlueButton>
-                            <TransparentBlueButton to={'/alco-labling'}>Узнать больше</TransparentBlueButton>
-                        </div>
-                    </ Block>
-                    < Block title={'маркировка DataMatrix кодами'} subtitle={'алкогольных напитков с помарочным учетом'} src={img.orsha}  className="row-reverse">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        <div className="buttons">
-                            <BlueButton>Заказать расчет</BlueButton>
-                            <TransparentBlueButton>Узнать больше</TransparentBlueButton>
-                        </div>
-                    </ Block>
-                    < Block title={'маркировка этикетками'} subtitle={'алкогольных напитков с помарочным учетом'} src={img.orsha}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        <div className="buttons">
-                            <BlueButton>Заказать расчет</BlueButton>
-                            <TransparentBlueButton>Узнать больше</TransparentBlueButton>
-                        </div>
-                    </ Block>
-                </div>
-            </div>
-            <Advantages />
+            <Banner
+                contentVideo={<img src={img.labeldm} alt='img' />}
+                contentName={'DataMatrix маркировка'}
+                contentTitle={'быстро качественно выгодно'}>
+                Маркировка товаров DataMatrix кодами для импортеров в Российскую Федерацию и Республику Беларусь.
+            </Banner>
+            <CategoryAbout cards={false} src={img.lbdm} video={"https://www.youtube.com/watch?v=2UXNdgC6O88&ab_channel=BreminoGroup"}
+            title={'самое сложное мы готовы взять на себя'} subtitle={'ООО «Бремино групп» оказывает широкий комплекс услуг по маркировке продукции, от оклейки готовыми этикетками заказчика до получения кодов маркировки за импортера, разработки индивидуального макета этикетки и организации доставки отмаркированной продукции заказчику. Опыт, квалификация сотрудников и надежные партнерские отношения позволяют предлагать клиентам разнообразные готовые решения для их бизнеса, в том числе организовывать совместно с заказчиком проработку новых направлений или товарных групп.'}/>
+            <CategoryAdvantage 
+                              //  onetitle={'Стоимость ниже'}
+                               one={'Стоимость маркировки сопоставимо ниже, чем на складах Европы'}
+                              //  twotitle={'Экономия средств'}
+                               two={'Маркировка на территории ЕАЭС (стоимость услуг не включается в таможенную стоимость)'}
+                            //    threetitle={'заголовок'}
+                               three={'Среднее время маркировки 30 тыс ед. до 24 часов (возможность маркировки до 15 партий товара единовременно)'}
+                            //    fourtitle={'заголовок'}
+                               four={'Комплексная услуга «под ключ»'}
+                            //    fivetitle={'заголовок'}
+                               five={'Бестранзитная технология (ускоренное прохождение границы с Европейским союзом)*'}
+                            //    sixtitle={'заголовок'}
+                               six={'Маркировка на складе временного хранения'}
+                            //    seventitle={'заголовок'}
+                               seven={'Наличие всего необходимого оборудования для маркировки'}
+                            //    eighttitle={'заголовок'}
+                               eight={'Наличие всего необходимого оборудования для маркировки'}
+                               description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                               when an unknown printer took a galley of type and scrambled it 
+                               to make a type specimen book.
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                               when an unknown printer took a galley of type and scrambled it 
+                               to make a type specimen boo.
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                               when an unknown printer took a galley of type and scrambled it 
+                               to make a type specimen book.`} 
+                               add={`*терминалы, расположенные в примыкании к границе с Республикой Польша`}/>                          
+            <HowWeWork />
+            <Tarrif title='тариф на хранение'>
+                <ProductCard title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
+                <ProductCard className="row-reverse" title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
+                <ProductCard title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
+                <ProductCard className="row-reverse" title={'Комплексная услуга по маркировке товаров кодом DataMatrix на СВХ и ТС'} subtitle={'10₽ / ед.'} src={img.duhi}>МПЛК “Бремино-Орша” / ТЛЦ “Бремино-Брузги” / ТЛЦ “Бремино-Берестовица”</ProductCard>
+            </Tarrif>
             <Partners />
             <CallBanner />
-            <Additional />
-            <Gallery />
+            <Advantages />
             <Footer />
         </div>
     );
-  }
-  
-  export default Avia;
+}
+
+export default Avia;
+
+
